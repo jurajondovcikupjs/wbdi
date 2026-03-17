@@ -1,0 +1,117 @@
+.navbar {
+    background-color: #3a3535;
+    padding: 10px;
+    backdrop-filter: blur(15px);
+    border-radius: 12px;
+    /*animation: anime 0.5s ease-in;*/
+}
+
+@keyframes anime {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    font-family: "Roboto", sans-serif;
+    margin-top: 20px;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #3a3535;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+}
+
+li a {
+    color: #3a3535;
+    text-decoration: underline;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+}
+
+.manual {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+details {
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 20px;
+    width: 100%;
+    margin-inline-start: 1rem;
+    margin-inline-end: 1rem;
+    background-color: #3a3535;
+    border-radius: 8px;
+    color: white;
+}
+details[open] {
+    margin-bottom: 20px;
+}
+
+details a {
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    background-color: #3a3535;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
