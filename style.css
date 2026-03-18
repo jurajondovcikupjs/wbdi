@@ -1,5 +1,16 @@
+/*
+    surface: 1B262C, //background
+    primary: 0F4C75, //shades
+    secondary: 3282B8, //buttons
+    tertiary: BBE1FA, //text
+*/
+body {
+    background-color: #1B262C;
+    margin: 20px;
+}
+
 .navbar {
-    background-color: #3a3535;
+    background-color: #0F4C75;
     padding: 10px;
     backdrop-filter: blur(15px);
     border-radius: 12px;
@@ -18,7 +29,7 @@
 }
 
 .navbar a {
-    color: white;
+    color: #BBE1FA;
     text-decoration: none;
     margin-right: 10px;
     font-family: "Roboto", sans-serif;
@@ -40,17 +51,20 @@ h1 {
     font-family: "Roboto", sans-serif;
     text-align: center;
     margin-top: 20px;
+    color: #BBE1FA;
 }
 
 h2 {
     font-family: "Roboto", sans-serif;
     margin-top: 20px;
+    color: #BBE1FA;
 }
 
 p {
     font-family: "Roboto", sans-serif;
     line-height: 1.6;
     margin-bottom: 20px;
+    color: #BBE1FA;
 }
 
 ul {
@@ -62,22 +76,24 @@ ul {
 li {
     margin-bottom: 10px;
     font-family: "Roboto", sans-serif;
+    color: #BBE1FA;
     list-style-type: "↪ ";
 }
 
 tr {
     font-family: "Roboto", sans-serif;
+    color: #BBE1FA;
 }
 
 table {
-    border: #3a3535 1px solid;
+    border: #3282B8 1px solid;
     width: 100%;
     margin-bottom: 20px;
 }
 
 th {
-    background-color: #3a3535;
-    color: white;
+    background-color: #3282B8;
+    color: #BBE1FA;
     padding: 10px;
     text-align: left;
     font-family: "Roboto", sans-serif;
@@ -87,18 +103,18 @@ caption {
     font-family: "Roboto", sans-serif;
     font-weight: bold;
     margin-bottom: 10px;
+    color: #BBE1FA;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #3a3535;
-    color: white;
+    background-color: #0F4C75;
     font-family: "Roboto", sans-serif;
 }
 
 footer a {
-    color: white;
+    color: #BBE1FA;
     text-decoration: underline;
     font-weight: bold;
     font-family: "Roboto", sans-serif;
@@ -114,11 +130,16 @@ footer a {
 
 .definition_div {
     display: block;
-    background-color: #f0f0f0;
+    background-color: #0F4C75;
     padding: 15px;
-    border-left: 5px solid #3a3535;
+    border-left: 5px solid #3282B8;
     margin-bottom: 20px;
     font-family: "Roboto", sans-serif;
+}
+
+.definition_div p {
+    margin: 0;
+    color: #BBE1FA;
 }
 
 .downloads {
@@ -136,8 +157,10 @@ footer a {
  padding: 0.9rem 1.8rem;
  font-size: 16px;
  font-weight: 700;
- color: rgb(0, 0, 0);
- border: 3px solid rgb(252, 70, 100);
+ color: #BBE1FA;
+ border: 3px solid #3282B8;
+ border-radius: 50px;
+ margin: 10px;
  cursor: pointer;
  position: relative;
  background-color: transparent;
@@ -154,7 +177,7 @@ footer a {
  top: 0;
  width: 100%;
  height: 100%;
- background-color: rgb(252, 70, 100);
+ background-color: #3282B8;
  transform: translateX(-100%);
  transition: all .3s;
  z-index: -1;
