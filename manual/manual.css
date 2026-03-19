@@ -1,5 +1,39 @@
+@media print {
+    body {
+        background-color: white;
+        color: black;
+    }
+    
+    .navbar, footer {
+        display: none;
+    }
+
+    .summary {
+        background-color: white;
+        color: black;
+    }
+
+    ::details-content {
+        content-visibility: visible;
+        height: auto !important;
+    }
+}
+
+:root {
+    --surface: #1B262C;
+    --primary: #0F4C75;
+    --secondary: #3282B8;
+    --tertiary: #BBE1FA;
+    scrollbar-color: var(--secondary) var(--surface);
+}
+
+body {
+    background-color: var(--surface);
+    margin: 20px;
+}
+
 .navbar {
-    background-color: #3a3535;
+    background-color: var(--primary);
     padding: 10px;
     backdrop-filter: blur(15px);
     border-radius: 12px;
@@ -18,7 +52,7 @@
 }
 
 .navbar a {
-    color: white;
+    color: var(--tertiary);
     text-decoration: none;
     margin-right: 10px;
     font-family: "Roboto", sans-serif;
@@ -40,11 +74,13 @@ h1 {
     font-family: "Roboto", sans-serif;
     text-align: center;
     margin-top: 20px;
+    color: var(--tertiary);
 }
 
 h2 {
     font-family: "Roboto", sans-serif;
     margin-top: 20px;
+    color: var(--tertiary);
 }
 
 p {
@@ -56,20 +92,21 @@ p {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #3a3535;
-    color: white;
+    background-color: var(--primary);
+    color: var(--tertiary);
     font-family: "Roboto", sans-serif;
+    border-radius: 15px;
 }
 
 footer a {
-    color: white;
+    color: var(--tertiary);
     text-decoration: underline;
     font-weight: bold;
     font-family: "Roboto", sans-serif;
 }
 
 li a {
-    color: #3a3535;
+    color: var(--tertiary);
     text-decoration: underline;
     font-family: "Roboto", sans-serif;
     font-weight: bold;
@@ -91,9 +128,9 @@ details {
     width: 100%;
     margin-inline-start: 1rem;
     margin-inline-end: 1rem;
-    background-color: #3a3535;
-    border-radius: 8px;
-    color: white;
+    background-color: var(--primary);
+    border-radius: 15px;
+    color: var(--tertiary);
 }
 details[open] {
     margin-bottom: 20px;
@@ -102,7 +139,7 @@ details[open] {
 details a {
     font-weight: bold;
     font-family: "Roboto", sans-serif;
-    color: white;
+    color: var(--tertiary);
 }
 
 
@@ -110,8 +147,8 @@ summary {
     font-weight: bold;
     cursor: pointer;
     font-family: "Roboto", sans-serif;
-    background-color: #3a3535;
-    color: white;
+    background-color: var(--primary);
+    color: var(--tertiary);
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 15px;
 }
