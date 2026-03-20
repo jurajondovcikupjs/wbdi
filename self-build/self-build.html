@@ -20,42 +20,50 @@
     <main>
         <section id="self-build">
             <h1>Vlastné zostavenie:</h1>
+            <h2>Návod na vlastné zostavenie aplikácie Cardabase:</h2>
             <ol>
-                <p>Návod na vlastné zostavenie aplikácie Cardabase:</p>
-                <li>Stiahnite si zdrojové kódy z <a href="https://github.com/GeorgeYT9769/cardabase-app" target="_blank">GitHubu</a>:</li>
+                <li>Stiahnite si zdrojové kódy z <a href="https://github.com/GeorgeYT9769/cardabase-app" target="_blank">GitHubu</a>: <br>
                 <code>git clone https://github.com/GeorgeYT9769/cardabase-app.git</code>
-                <li>Zmeňte pracovný adresár na stiahnutý repozitár:</li>
-                <code>cd cardabase-app</code>
-                </li>
-                <li>Inštalujte potrebné nástroje a závislosti:</li>
-                <code>flutter pub get</code>
-                <li>V príkazovom riadku spustite:</li>
-                <code>flutter build apk (--split-per-abi dobrovoľné)</code>
-                <li>Po dokončení procesu nájdete vygenerovaný súbor APK v adresári <code>build/app/outputs/flutter-apk/app-release.apk</code>.</li>
-                <code>adb install build/app/outputs/flutter-apk/app-release.apk</code>
+                
+                <li>Zmeňte pracovný adresár na stiahnutý repozitár: <br>
+                <code>cd cardabase-app</code></li>
+                
+                <li>Inštalujte potrebné nástroje a závislosti: <br>
+                <code>flutter pub get</code></li>
+                
+                <li>V príkazovom riadku spustite: <br>
+                <code>flutter build apk (--split-per-abi dobrovoľné)</code></li>
+                
+                <li>Po dokončení procesu nájdete vygenerovaný súbor APK v adresári <code>build/app/outputs/flutter-apk/app-release.apk</code>. <br>
+                <code>adb install build/app/outputs/flutter-apk/app-release.apk</code>>
+                    
                 <br>
                 <br>
-                <small><em>Podpisovanie aplikácie je zapnuté. V priečinku <code>/cardabase-app/android</code> potrebujete podpisový kľúč a súbor key.properties, inak kompilácia zlyhá. Ak chcete aplikáciu podpísať pomocou ladiaceho kľúča, môžete <a href="https://github.com/GeorgeYT9769/cardabase-app/blob/1daf9c7244a081fe847b499cc55509c10772668d/android/app/build.gradle#L86">TENTO RIADOK</a> zmeniť na debug.</em></small>
+                <small><em>Podpisovanie aplikácie je zapnuté. V priečinku <code>/cardabase-app/android</code> potrebujete podpisový kľúč a súbor key.properties, inak kompilácia zlyhá. Ak chcete aplikáciu podpísať pomocou ladiaceho kľúča, môžete <a href="https://github.com/GeorgeYT9769/cardabase-app/blob/1daf9c7244a081fe847b499cc55509c10772668d/android/app/build.gradle#L86">TENTO RIADOK</a> zmeniť na debug.</em></small></li>
             </ol>
             <br>
             <br>
+            <h2>Použité nástroje a ich verzie:</h2>
             <ul>
-                <p>Použité nástroje a ich verzie:</p>
                 <li>Flutter 3.38.5 (vždy pribalená)</li>
                 <li>Java JDK-21</li>
-                <li>Gradle: 8.14.2</li>
+                <li>Gradle: 8.14.2
                 <br>
-                <small><em>Java a Gradle musia byť navzájom kompatibilné. Pozri tento <a href="https://docs.gradle.org/current/userguide/compatibility.html">Compatibility Matrix.</a></em></small>
+                <br>
+                <small><em>Java a Gradle musia byť navzájom kompatibilné. Pozri tento <a href="https://docs.gradle.org/current/userguide/compatibility.html">Compatibility Matrix.</a></em></small></li>
             </ul>
             <br>
+            <h2>Možno budete potrebovať:</h2>
             <ul>
-                <p>Možno budete potrebovať:</p>
                 <li>Podpisový kľúč a súbor key.properties</li>
+                
                 <li>Android SDK</li>
-                <li>Špecifikovať JAVA_HOME v gradle.properties, pridajte riadok:</li>
-                <code>org.gradle.java.home="C:\\path\\to\\the\\jdk</code>
-                <li>Zmeniť verziu Gradle v gradle-wrapper.properties:</li>
-                <code>distributionUrl=https\://services.gradle.org/distributions/gradle-X.X.X-bin.zip</code>
+                
+                <li>Špecifikovať JAVA_HOME v gradle.properties, pridajte riadok: <br>
+                <code>org.gradle.java.home="C:\\path\\to\\the\\jdk</code></li>
+                
+                <li>Zmeniť verziu Gradle v gradle-wrapper.properties: <br>
+                <code>distributionUrl=https\://services.gradle.org/distributions/gradle-X.X.X-bin.zip</code></li>
             </ul>
         </section>
     </main>

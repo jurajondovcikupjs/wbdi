@@ -8,6 +8,11 @@
         display: none;
     }
 
+    h1, h2 {
+        color: black;
+        font-family: "Roboto", sans-serif;
+    }
+
     .summary {
         background-color: white;
         color: black;
@@ -17,6 +22,7 @@
         content-visibility: visible;
         height: auto !important;
     }
+
 }
 
 :root {
@@ -37,7 +43,7 @@ body {
     padding: 10px;
     backdrop-filter: blur(15px);
     border-radius: 12px;
-    /*animation: anime 0.5s ease-in;*/
+    animation: anime 0.5s ease-in;
 }
 
 @keyframes anime {
@@ -71,16 +77,18 @@ body {
 }
 
 h1 {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", serif;
     text-align: center;
     margin-top: 20px;
     color: var(--tertiary);
+    font-size: 36px;
 }
 
 h2 {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", serif;
     margin-top: 20px;
     color: var(--tertiary);
+    font-size: 28px;
 }
 
 p {
@@ -151,4 +159,8 @@ summary {
     color: var(--tertiary);
     padding: 10px;
     border-radius: 15px;
+}
+
+summary:hover {
+    text-decoration: underline;
 }
