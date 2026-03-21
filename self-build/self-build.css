@@ -137,10 +137,11 @@ ul {
 }
 
 li {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
     font-family: "Roboto", sans-serif;
     color: var(--tertiary);
+    line-height: 1.6;
 }
 
 small {
