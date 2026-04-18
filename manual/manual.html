@@ -12,9 +12,17 @@
   </head>
   <body>
     <header>
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Hlavná navigácia">
             <div class="navbar_div">
-                <a href="./../index.html">Hlavná stránka</a> <a href="./../self-build/self-build.html">Vlastné zostavenie</a>
+                <div class="nav_spacer"></div>
+                <div class="nav_links">
+                    <a href="./../index.html">Hlavná stránka</a> <a href="./../self-build/self-build.html">Vlastné zostavenie</a>
+                </div>
+                <div class="nav_right">
+                    <a href="manual-eng.html" class="lang_switcher" aria-label="Anglická verzia">
+                        <img src="../eng.png" alt="Anglická vlajka">
+                    </a>
+                </div>
             </div>
         </nav>
     </header>
@@ -25,19 +33,19 @@
                  <details>
                      <summary>F-Droid:</summary>
                      <ol>
-                         <li>Použite obchod <a href="https://f-droid.org/packages/com.georgeyt9769.cardabase/" target="_blank">F-Droid</a> pre inštaláciu.</li>
+                         <li>Použite obchod <a href="https://f-droid.org/packages/com.georgeyt9769.cardabase/" target="_blank" aria-label="F-Droid (otvorí sa v novej karte)">F-Droid</a> pre inštaláciu.</li>
                          <li>Po inštalácii je aplikácia pripravená.</li>
                      </ol>
                  </details>
                  <details>
                      <summary>GitHub:</summary>
                      <ol>
-                         <li>Stiahnite si aplikáciu ako <b>.apk</b> súbor cez <a href="https://github.com/georgeyt9769/cardabase-app/releases/latest" target="_blank">GitHub vydania</a>: <br>
+                         <li>Stiahnite si aplikáciu ako .apk súbor (veľkosť cca 15 MB) cez <a href="https://github.com/georgeyt9769/cardabase-app/releases/latest" target="_blank" aria-label="GitHub vydania (otvorí sa v novej karte)">GitHub vydania</a>: <br>
                              <ul>
-                                <li><b>Univerzálna</b> - ak neviete, ktorú zvoliť (obsahuje všetky ABI, ale je väčšia).</li>
-                                <li><b>ARM 64-bit v8a</b> - pre moderné zariadenia (odporúčané).</li>
-                                <li><b>ARM 32-bit v7a</b> - pre staršie a lacné zariadenia (dnes už takmer nepoužívané).</li>
-                                <li><b>x86 64-bit</b> - pre zariadenia s procesorom x86 (napr. niektoré tablety a počítače).</li>
+                                <li><u>Univerzálna</u> - ak neviete, ktorú zvoliť (obsahuje všetky ABI, ale je väčšia).</li>
+                                <li><u>ARM 64-bit v8a</u> - pre moderné zariadenia (odporúčané).</li>
+                                <li><u>ARM 32-bit v7a</u> - pre staršie a lacné zariadenia (dnes už takmer nepoužívané).</li>
+                                <li><u>x86 64-bit</u> - pre zariadenia s procesorom x86 (napr. niektoré tablety a počítače).</li>
                             </ul>
                          </li>
                          <li>Následne ju nájdite v priečinku Stiahnuté, resp. Downloads.</li>
@@ -49,7 +57,10 @@
         </section>
     </main>
     <footer>
+        <p>Správca obsahu a technický prevádzkovateľ: Juraj Ondovčík</p>
         <p>Kontakt: <a href="mailto:juraj.ondovcik@student.upjs.sk">juraj.ondovcik@student.upjs.sk</a> </p>
+        <p>Chyby ohláste prosím na e-mail uvedený vyššie.</p>
+        <p><a href="../accessibility/accessibility.html">Vyhlásenie o prístupnosti</a></p>
         <p>© 2026 Cardabase. Všetky práva vyhradené.</p>
     </footer>
   </body>

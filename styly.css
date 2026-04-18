@@ -25,10 +25,6 @@
         box-shadow: none !important;
     }
 
-    ::details-content {
-        height: auto !important;
-    }
-
     .summary {
         background-color: white;
         color: black;
@@ -85,7 +81,7 @@ body {
     text-decoration: none;
     margin-right: 10px;
     font-family: "Roboto", sans-serif;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .navbar a:hover {
@@ -95,9 +91,37 @@ body {
 .navbar_div {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav_spacer, .nav_right {
+    flex: 1;
+    display: flex;
+}
+
+.nav_right {
+    justify-content: flex-end;
+}
+
+.nav_links {
+    display: flex;
     justify-content: center;
     gap: 3vw;
     flex-wrap: wrap;
+}
+
+.lang_switcher img {
+    height: 24px;
+    width: auto;
+    border-radius: 4px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    vertical-align: middle;
+}
+
+.lang_switcher img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 8px var(--secondary);
 }
 
 h1 {
@@ -206,21 +230,19 @@ table {
     margin-bottom: 2vw;
     border-radius: 1vw;
     table-layout: auto;
-    word-break: break-word;
+
 }
 
 th {
-    background-color: var(--secondary);
-    color: var(--tertiary);
     padding: 0.7vw 1vw;
     text-align: left;
     font-family: "Roboto", sans-serif;
-    font-size: 1rem;
+    font-weight: normal;
 }
 
 caption {
     font-family: "Roboto", sans-serif;
-    font-weight: bold;
+    font-weight: normal;
     margin-bottom: 10px;
     color: var(--tertiary);
 }
@@ -236,7 +258,7 @@ footer {
 footer a {
     color: var(--tertiary);
     text-decoration: underline;
-    font-weight: bold;
+    font-weight: normal;
     font-family: "Roboto", sans-serif;
 }
 
@@ -278,7 +300,8 @@ footer a {
     display: inline-block;
     padding: 0.9em 1.8em;
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: normal;
+    font-family: "Roboto", sans-serif;
     color: var(--tertiary);
     border: 0.2em solid var(--secondary);
     border-radius: 1vw;
@@ -382,7 +405,7 @@ footer a {
 }
 
 .screenshot:hover {
-    transform: scale(1.01);
+    transform: scale(1.02);
     transition: transform 0.3s ease;
 }
 
@@ -437,14 +460,14 @@ a {
     color: var(--tertiary);
     text-decoration: underline;
     font-family: "Roboto", sans-serif;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 li a {
     color: var(--tertiary);
     text-decoration: underline;
     font-family: "Roboto", sans-serif;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .manual {
@@ -472,14 +495,14 @@ details[open] {
 }
 
 details a {
-    font-weight: bold;
+    font-weight: normal;
     font-family: "Roboto", sans-serif;
     color: var(--tertiary);
 }
 
 
 summary {
-    font-weight: bold;
+    font-weight: normal;
     cursor: pointer;
     font-family: "Roboto", sans-serif;
     background-color: var(--primary);

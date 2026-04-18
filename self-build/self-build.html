@@ -12,9 +12,17 @@
   </head>
   <body>
     <header>
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Hlavná navigácia">
             <div class="navbar_div">
-                <a href="./../index.html">Hlavná stránka</a> <a href="./../manual/manual.html">Návod na inštaláciu</a>
+                <div class="nav_spacer"></div>
+                <div class="nav_links">
+                    <a href="./../index.html">Hlavná stránka</a> <a href="./../manual/manual.html">Návod na inštaláciu</a>
+                </div>
+                <div class="nav_right">
+                    <a href="self-build-eng.html" class="lang_switcher" aria-label="English version">
+                        <img src="../eng.png" alt="Anglická vlajka">
+                    </a>
+                </div>
             </div>
         </nav>
     </header>
@@ -23,8 +31,8 @@
             <h1>Vlastné zostavenie:</h1>
             <h2>Návod:</h2>
             <ol>
-                <li>Stiahnite si zdrojové kódy z <a href="https://github.com/GeorgeYT9769/cardabase-app" target="_blank">GitHubu</a>: <br>
-                <code>git clone https://github.com/GeorgeYT9769/cardabase-app.git</code>
+                <li>Stiahnite si zdrojové kódy z <a href="https://github.com/GeorgeYT9769/cardabase-app" target="_blank"  aria-label="Zdrojový kód (otvorí sa v novej karte)">GitHubu</a>: <br>
+                <code>git clone https://github.com/GeorgeYT9769/cardabase-app.git</code></li>
                 
                 <li>Zmeňte pracovný adresár na stiahnutý repozitár: <br>
                 <code>cd cardabase-app</code></li>
@@ -35,8 +43,8 @@
                 <li>V príkazovom riadku spustite: <br>
                 <code>flutter build apk (--split-per-abi dobrovoľné)</code></li>
                 
-                <li>Po dokončení procesu nájdete vygenerovaný súbor APK v adresári: <br> <code>build/app/outputs/flutter-apk/app-release.apk</code> <br> a nainštalujte ho na svoje zariadenie pomocou ADB: <br></li>
-                <code>adb install build/app/outputs/flutter-apk/app-release.apk</code>.</li>
+                <li>Po dokončení procesu nájdete vygenerovaný súbor APK v adresári: <br> <code>build/app/outputs/flutter-apk/app-release.apk</code> <br> a nainštalujte ho na svoje zariadenie pomocou ADB: <br>
+                <code>adb install build/app/outputs/flutter-apk/app-release.apk</code>.
                     
                 <br>
                 <br>
@@ -69,7 +77,10 @@
         </section>
     </main>
     <footer>
+        <p>Správca obsahu a technický prevádzkovateľ: Juraj Ondovčík</p>
         <p>Kontakt: <a href="mailto:juraj.ondovcik@student.upjs.sk">juraj.ondovcik@student.upjs.sk</a> </p>
+        <p>Chyby ohláste prosím na e-mail uvedený vyššie.</p>
+        <p><a href="../accessibility/accessibility.html">Vyhlásenie o prístupnosti</a></p>
         <p>© 2026 Cardabase. Všetky práva vyhradené.</p>
     </footer>
   </body>

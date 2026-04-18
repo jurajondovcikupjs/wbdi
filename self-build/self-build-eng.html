@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cardabase</title>
+    <meta name="author" content="Juraj Ondovčík">
+    <meta name="theme-color" content="#1B262C">
+    <link rel="stylesheet" href="./../styly.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+  </head>
+  <body>
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="navbar_div">
+                <div class="nav_spacer"></div>
+                <div class="nav_links">
+                    <a href="./../index-eng.html">Home</a> <a href="./../manual/manual-eng.html">Installation Manual</a>
+                </div>
+                <div class="nav_right">
+                    <a href="self-build.html" class="lang_switcher" aria-label="Slovak version">
+                        <img src="../svk.png" alt="Slovak flag">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="self-build">
+            <h1>Self-build:</h1>
+            <h2>Guide:</h2>
+            <ol>
+                <li>Download the source codes from <a href="https://github.com/GeorgeYT9769/cardabase-app" target="_blank" aria-label="GitHub (opens in a new tab)">GitHub</a>: <br>
+                <code>git clone https://github.com/GeorgeYT9769/cardabase-app.git</code></li>
+                
+                <li>Change the working directory to the downloaded repository: <br>
+                <code>cd cardabase-app</code></li>
+                
+                <li>Install necessary tools and dependencies: <br>
+                <code>flutter pub get</code></li>
+                
+                <li>Run in the command line: <br>
+                <code>flutter build apk (--split-per-abi optional)</code></li>
+                
+                <li>After completing the process, you will find the generated APK file in the directory: <br> <code>build/app/outputs/flutter-apk/app-release.apk</code> <br> and install it on your device using ADB: <br>
+                <code>adb install build/app/outputs/flutter-apk/app-release.apk</code>.
+                    
+                <br>
+                <br>
+                <small><em>App signing is enabled. In the <code>/cardabase-app/android</code> folder, you need a signing key and a key.properties file, otherwise compilation will fail. If you want to sign the app using a debug key, you can change <a href="https://github.com/GeorgeYT9769/cardabase-app/blob/1daf9c7244a081fe847b499cc55509c10772668d/android/app/build.gradle#L86" target="_blank">THIS LINE</a> to debug.</em></small></li>
+            </ol>
+            <br>
+            <br>
+            <h2>Used tools and their versions:</h2>
+            <ul>
+                <li>Flutter 3.38.5 (always bundled)</li>
+                <li>Java JDK-21</li>
+                <li>Gradle: 8.14.2
+                <br>
+                <br>
+                <small><em>Java and Gradle must be compatible with each other. See this <a href="https://docs.gradle.org/current/userguide/compatibility.html" target="_blank">Compatibility Matrix.</a></em></small></li>
+            </ul>
+            <br>
+            <h2>You might need:</h2>
+            <ul>
+                <li>Signing key and key.properties file</li>
+                
+                <li>Android SDK</li>
+                
+                <li>Specify JAVA_HOME in gradle.properties, add the line: <br>
+                <code>org.gradle.java.home="C:\\path\\to\\the\\jdk"</code></li>
+                
+                <li>Change the Gradle version in gradle-wrapper.properties: <br>
+                <code>distributionUrl=https\://services.gradle.org/distributions/gradle-X.X.X-bin.zip</code></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Content Manager and Technical Operator: Juraj Ondovčík</p>
+        <p>Contact: <a href="mailto:juraj.ondovcik@student.upjs.sk">juraj.ondovcik@student.upjs.sk</a> </p>
+        <p>Please report bugs to the email provided above.</p>
+        <p><a href="../accessibility/accessibility-eng.html">Accessibility Statement</a></p>
+        <p>© 2026 Cardabase. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
